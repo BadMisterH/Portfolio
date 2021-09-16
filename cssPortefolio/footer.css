@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; /*ultra important */
+  scroll-behavior: smooth;
+}
+
+
+.copyright {
+  color: white;
+  font-weight: bold;
+  font-family: "Amiko", sans-serif;
+  font-size: 0.7rem;
+}
+
+.quoridor {
+  color: black;
+}
+
+.copyrightQuoridor {
+  background-color: #f4b4cc;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.projectFooter{
+    position: absolute;
+    bottom: 0;
+
+}

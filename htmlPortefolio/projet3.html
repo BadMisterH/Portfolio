@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="=fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeu en C++</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../cssPortefolio/footer.css" />
+    <link rel="stylesheet" href="../cssPortefolio/projet.css" />
+    <link rel="icon" type="image/png" href="../images/LogoPortefolio2.png">
+
+  </head>
+
+  <body>
+    <header class="header2">
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="../index.php">
+              <li>Accueil</li>
+            </a>
+
+            
+            <a href="projet2.html"><li>Les éléments</li></a>
+
+            <a href="projet1.html"><li>Robot PI 2</li></a>
+  
+
+            <a href="../contact.php">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <header class="head1">
+      <nav>
+        <a href="../index.php">
+        <img class="logo" src="../images/LogoPortefolio.svg" alt="logo" data-aos="zoom-in" />
+       </a>
+        <ul class="navigations" data-aos="fade-left">
+          <a href="../index.php">
+            <li class="liste">Accueil</li>
+          </a>
+
+          <a href="projet2.html"><li class="liste">Les éléments</li></a>
+
+          <a href="projet1.html"><li class="liste">Robot PI 2</li></a>
+
+
+          <a href="../contact.php">
+            <li class="liste">Contact</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="pages">
+      <h1 class="Jeu">Prototype de jeu avec le langage C++</h1>
+
+      <div class="boite">
+        <div class="box one" data-aos="fade-right">
+          <p class="paragraphesProjet">
+            Le tout premier projet que j'ai réalisé consiste à creer
+            mon tout premier prototype de jeu en langage C++ en utilisant la
+            librairie SFML. Pour le développer, je devais penser à plusieurs facteurs lors de la réalisation de ce code,
+            comme les déplacements du personnage et de la caméra dans une fenêtre,
+            gérer les frames du personnage quand il se déplace dans une direction
+            en particulier, et intégrer la détection du clavier et de la souris,
+            pour faire avancer le personnage, dans un décor graphique.
+          </p>
+        </div>
+        <div class="box one">
+          <iframe
+          width="500"
+          height="415"
+            src="https://www.youtube.com/embed/h2J9Ess9k-Y"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 3000,
+          once: true,
+        });
+      </script>
+    </section>
+    <footer class="copyright projectFooter" id="footer">
+      <p>© KHAZZANI Badr 2020 | Tous droits reservés</p>
+    </footer>
+  </body>
+</html>

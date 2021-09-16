@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: Helvetica, sans-serif;
+    background: linear-gradient(to top, #681e41, #1b0d30, #681e41);
+}
+
+p {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top:40px
+}
+
+#page-wrap {
+    
+    height: auto !important;
+}
+
+#contact-area {
+    width: 500px;
+    margin-top: 65px;
+    text-align: center;
+    margin-left: 31%;
+}
+
+#contact-area input, #contact-area textarea {
+    padding: 5px;
+    width: 471px;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.4em;
+    margin: 0px 0px 10px 0px;
+    border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+    height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+    border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+    width: 100px;
+    float: right;
+}
+
+label {
+    float: left;
+    text-align: right;
+    margin-right: 15px;
+    width: 100px;
+    padding-top: 5px;
+    font-size: 1.4em;
+    color: white;
+}
+
+
+.success {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image:url('../images/success.png');
+    background-size:31px 31px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px; font-weight: 600;
+}
+
+
+input:required{
+
+    border: solid 2px red;
+    padding-right: 15px;
+
+}
+
+input :required:valid{
+
+    border: solid 2px green;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: center right;
+
+}
+
+#R {
+    margin-top: 70px;
+}
+
+#R a{
+
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+@media only screen and (max-width: 1072px){
+
+    #contact-area   {
+
+        width: 50px;
+
+    }
+
+    #page-wrap{
+
+        width: 300px;
+    }
+
+    #email{
+
+        width: 100px;
+    
+    }
+    #contact-area input{
+
+        width: 200px;
+
+    }
+
+    #contact-area textarea {
+
+        width: 200px;
+    }
+
+    #contact-area .submit-button{
+
+        margin-right: -110px;
+    }
+
+    
+
+}

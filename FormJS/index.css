@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:  100vh;
+    background: linear-gradient(#000, #9198e5);
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin: 0 50px 0;
+}
+
+.pseudo-container,
+.mail-container,
+.password-container,
+.Confirmpassword-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.mail-container,
+.password-container,
+.Confirmpassword-container {
+  margin-bottom: 10px;
+}
+
+#value {
+  width: fit-content;
+  margin: 30px;
+  font-weight: bold;
+  background-color: #3d62cc;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+span {
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+}
+
+#error {
+  color: red;
+  font-weight: bold;
+  visibility: visible;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  visibility: visible;
+}
+
+#valid {
+  color: green;
+  font-weight: bold;
+  visibility: visible;
+
+}
+
+
+.valid {
+  font-weight: bold;
+  visibility: visible;
+  border:  solid 2px green !important;
+}
+
+.errorInput {
+  border: solid 2px red !important;
+  font-weight: bold;
+  visibility: visible;
+}
+
+p {
+  width: 0%;
+  visibility: hidden;
+  transition: all 1s;
+}
+
+.progress-bar {
+  width: 10%;
+  height: 7px;
+  border-radius: 10px;
+  background-color: red;
+  visibility: visible;
+  margin-top: 10px;
+  transition: all 2s;
+}
+
+.progress-bar_milieu {
+  width: 30%;
+  height: 7px;
+  border-radius: 10px;
+  background-color: green;
+  visibility: visible;
+  margin-top: 10px;
+  transition: all 2s;
+}
+
+.progress-bar_fin {
+  width: 40%;
+  height: 7px;
+  border-radius: 10px;
+  background-color: blue;
+  visibility: visible;
+  margin-top: 10px;
+  transition: all 2s;
+}
+
+input {
+  outline: none;
+}
+
+#value {
+  margin: 10px auto 0;
+}
+
+input {
+  padding: 5px;
+}
+
+
+label{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.inputTaper{
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px 0 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  width: 60%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px 5px #000;
+
+}
+
+.img {
+  object-fit: contain;
+  background-position: center;
+  height: 100%;
+  width: 35%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 15px 0px 0px 15px;
+}
+
+button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width : 1280px){
+.img{
+  display: none;
+}
+}
+
+

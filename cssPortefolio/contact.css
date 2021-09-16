@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*ultra important */
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url("../images/BadrCampoo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top 0px right 0px;
+  background-attachment: fixed;
+}
+
+html {
+  --res: calc(0.01 * 10vmin);
+}
+
+form {
+  margin: 120px 0 120px 0;
+  background: #f1f1f1;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 15%,
+    rgba(255, 255, 255, 0.6643032212885154) 80%
+  );
+
+  background-attachment: fixed;
+  padding: 100px;
+  border-radius: 30px;
+}
+
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+label {
+  font-family: "Amiko";
+  margin-top: 10px;
+  font-size: calc(30 * var(--res));
+  opacity: initial;
+}
+
+
+@media screen and (max-width: 850px) {
+  body {
+    background: url("../images/BadrCampoo.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+  }
+
+
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mise _en_forme_effect/effect.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="./Mise _en_forme_effect/img/LogoPortefolio2.png">
+    <title>Effect</title>
+
+    <script type="text/javascript">
+
+$(document).ready(function() {
+         
+         setInterval( function() {
+         var seconds = new Date().getSeconds();
+         var sdegree = seconds * 6;
+         var srotate = "rotate(" + sdegree + "deg)";
+         
+         $("#sc").css({"-moz-transform" : srotate, "-webkit-transform" : srotate});
+             
+         }, 1000 );
+         
+     
+         setInterval( function() {
+         var hours = new Date().getHours();
+         var mins = new Date().getMinutes();
+         var hdegree = hours * 30 + (mins / 2);
+         var hrotate = "rotate(" + hdegree + "deg)";
+         
+         $("#hr").css({"-moz-transform" : hrotate, "-webkit-transform" : hrotate});
+             
+         }, 1000 );
+     
+     setInterval( function() {
+         var mins = new Date().getMinutes();
+         var mdegree = mins * 6;
+         var mrotate = "rotate(" + mdegree + "deg)";
+         
+         $("#mn").css({"-moz-transform" : mrotate, "-webkit-transform" : mrotate});
+             
+         }, 1000 );
+     
+     });
+ 
+ 
+</script>
+   
+
+</head>
+<body>
+
+    <section>
+    <div class="A">
+    <div class="Yolo Yolo1"></div>
+    <div class="Yolo Yolo2"></div>
+    </div>
+    <section>
+
+        <span class="clock">
+
+            <span><img src="circle2.png" alt="" ></span>
+    
+               <div class="hour">
+                   <div class="hr" id="hr"></div>
+               </div>
+    
+            <div class="min">
+                <div class="mn" id="mn"></div>
+            </div>
+    
+            <div class="sec">
+                <div class="sc" id="sc"></div>
+            </div>
+    
+        </span>
+        
+
+    <div class="presentation">
+
+       <div class="P"><a href="Cv/CvBadrKHAZZANI.pdf">MON CV STATIQUE </a></div>
+       <!-- <div class="P2"><a class="Po" href="../index.html">PORTEFOLIO</a></div> -->
+       <div class="P3"><a href="Mise_en_page/Badr.html">CV NUMERIQUE !!</a></div>
+
+    </div>
+
+    </section>
+
+</body>
+</html>
+
+
